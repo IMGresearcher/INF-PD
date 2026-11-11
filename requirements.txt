@@ -1,0 +1,8 @@
+# Tested with Python 3.11; choose matching PyTorch CPU/CUDA wheel for your system.
+numpy>=1.24,<3
+pandas>=2.0,<3
+scipy>=1.10,<2
+scikit-learn>=1.3,<2
+matplotlib>=3.7,<4
+tqdm>=4.65,<5
+torch>=2.1,<3
