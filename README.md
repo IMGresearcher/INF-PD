@@ -11,7 +11,7 @@ Offical implementation of a clinically informed two-stage motor-aware fusion fra
 ## Repository layout
 
 ```text
-INF-PD-GitHub/
+INF-PD/
 ├── model_connectome.py          # Stage-I graph neural network
 ├── train_stage1.py             # Stage-I five-fold training and OOF prediction
 ├── train_stage2_diagnosis.py   # Stage-II diagnosis and pairwise labels
@@ -19,10 +19,6 @@ INF-PD-GitHub/
 ├── train_stage2_hy.py          # Stage-II Hoehn–Yahr pairwise classification
 ├── tests/                      # Synthetic unit tests (no medical data)
 ├── requirements.txt
-├── requirements-dev.txt
-├── pyproject.toml
-├── .gitignore
-└── LICENSE
 ```
 
 ## Installation
