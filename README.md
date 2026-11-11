@@ -21,30 +21,6 @@ INF-PD/
 ├── requirements.txt
 ```
 
-## Installation
-
-```bash
-python -m venv .venv
-# Linux/macOS: source .venv/bin/activate
-# Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-# or: pip install -e .
-```
-
-Install a PyTorch wheel compatible with your CPU/CUDA environment. For syntax, imports, and synthetic tests:
-
-```bash
-pip install -r requirements-dev.txt
-python -m pytest -q
-python train_stage1.py --help
-```
-
-## Required private data
-
-Place **deidentified**, authorized data under `data/` (ignored by Git). The Stage-I script expects the original subject directory layout used by the supplied training script: subject folders containing `DTI_B2000_64dir_PA/<scan>/tract_out*/tracks_500k_ifod2.tck`, with corresponding tractography-derived connectivity matrices in the existing `connectome/<tract_id>` mapping (see `find_connectome_path_for_tck` in `train_stage1.py`). The tractography and parcellation pipeline itself is **not** supplied.
-
-Clinical CSVs must contain subject/visit identifiers and the exact five motor-score columns expected by the original scripts.
-
 ## Run Stage I
 
 Run from repository root. Point to your local (unpublished) input files:
