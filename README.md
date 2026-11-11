@@ -1,6 +1,6 @@
 # INF-PD
 
-Offical implementation of a clinically informed two-stage motor-aware fusion framework for PD diagnosis using multimodal structural connectomes. The repository contains the five user-provided Python modules.
+Offical implementation of a clinically informed two-stage motor-aware fusion framework for PD diagnosis using multimodal structural connectomes.
 
 ## Overview
 
